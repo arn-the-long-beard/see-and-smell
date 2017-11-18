@@ -13,8 +13,9 @@ const Help = () => (
       <p>This app is easy :
     </p>
       <ul>
-        <li>Talk to the app</li>
-        <li>Seek the information</li>
+        <li>Create markers for your trip</li>
+        <li>Choose your travel mode</li>
+        <li>Smell your gaz</li>
       </ul>
       <p><b>Well, wait for it</b></p>
     </div>

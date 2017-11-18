@@ -54,7 +54,7 @@ See.propTypes = {
   see: PropTypes.object.isRequired
 }
 function mapStateToProps (state) {
-  const { see } = state.seeAndStink
+  const { see } = state.seeAndSmell
   return {
     see
   }

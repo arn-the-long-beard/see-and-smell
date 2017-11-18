@@ -25,7 +25,7 @@ export const askWikipediaSuccess = (json) => {
 
 export const askWikipedia = () => {
   return (dispatch, getState) => {
-    const { key, maxResults} = getState().seeAndStink.stink
+    const { key, maxResults} = getState().seeAndSmell.smell
     dispatch(askWikipediaRequest(key))
     return Api.send(key, maxResults).then(response => {
       if (response.success) {
@@ -40,7 +40,7 @@ export const askWikipedia = () => {
 }
 
 const shouldAsk = (state) => {
-  // const {seek} = state.seeAndStink
+  // const {seek} = state.seeAndSmell
   // if (seek.key && seek.didInvalidate && !seek.isRequesting) {
   //   return true
   // } else {

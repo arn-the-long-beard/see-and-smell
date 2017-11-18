@@ -1,5 +1,5 @@
 {
-  "name": "see-and-stink",
+  "name": "see-and-smell",
   "version": "1.0.0",
   "description": "React-Node.js platform with google Map Api and my carboon foot print calculator",
   "main": "developement.js",
@@ -110,13 +110,13 @@
   "author": "“arn-the-long-beard” <arn.menant@gmail.com> (https://github.com/arn-the-long-beard)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/arn-the-long-beard/see-and-stink/issues"
+    "url": "https://github.com/arn-the-long-beard/see-and-smell/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arn-the-long-beard/see-and-stink.git"
+    "url": "git+https://github.com/arn-the-long-beard/see-and-smell.git"
   },
-  "homepage": "https://github.com/arn-the-long-beard/see-and-stinkk#readme",
+  "homepage": "https://github.com/arn-the-long-beard/see-and-smell#readme",
   "devDependencies": {
     "jshint": "2.9.5",
     "remove": "0.1.5",

@@ -6,9 +6,9 @@ import styles from './styles/styles.scss'
 import PropTypes from 'prop-types'
 
 import See from './See/See'
-import Stink from './Stink/Stink'
+import Stink from './Smell/Smell'
 
-const TalkAndSeek = () => (
+const SeeAndSmell = () => (
   <div className={styles.container}>
     <Helmet>
       <title>See and Stink</title>
@@ -18,9 +18,9 @@ const TalkAndSeek = () => (
     <Stink />
   </div>
 )
-TalkAndSeek.contextTypes = {
+SeeAndSmell.contextTypes = {
   router: PropTypes.object.isRequired,
   insertCss: PropTypes.func
 }
 
-export default withStyles(styles)(TalkAndSeek)
+export default withStyles(styles)(SeeAndSmell)

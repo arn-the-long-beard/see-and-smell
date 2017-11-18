@@ -1,6 +1,6 @@
 import * as types from './actionTypes'
 
-export default function stink (state = { items: [], maxResults: 10, isRequesting: false}, action) {
+export default function smell (state = { items: [], maxResults: 10, isRequesting: false}, action) {
   switch (action.type) {
     case types.ASK_WIKIPEDIA_FAILED:
       return {...state,

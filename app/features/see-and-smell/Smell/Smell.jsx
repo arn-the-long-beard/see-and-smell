@@ -5,7 +5,7 @@ import {connect} from 'react-redux'
 import * as actions from './actions'
 import SeekResultsList from './components/SeekSection'
 
-class Stink extends Component {
+class Smell extends Component {
   /**
    * Class constructor.
    */
@@ -32,28 +32,28 @@ class Stink extends Component {
    */
   render () {
     return (
-      <SeekResultsList results={this.props.stink.items}
-        update={this.props.stink.lastUpdated}
-        message={this.props.stink.message}
-        isRequesting={this.props.stink.isRequesting}
-        maxResults={this.props.stink.maxResults}
+      <SeekResultsList results={this.props.smell.items}
+        update={this.props.smell.lastUpdated}
+        message={this.props.smell.message}
+        isRequesting={this.props.smell.isRequesting}
+        maxResults={this.props.smell.maxResults}
         onChange={this.onChange}
       />)
   }
 }
 
-Stink.contextTypes = {
+Smell.contextTypes = {
   router: PropTypes.object.isRequired
 }
 
-Stink.propTypes = {
-  stink: PropTypes.object.isRequired
+Smell.propTypes = {
+  smell: PropTypes.object.isRequired
 }
 function mapStateToProps (state) {
-  const { stink } = state.seeAndStink
+  const { smell } = state.seeAndSmell
 
   return {
-    stink
+    smell
   }
 }
 function mapDispatchToProps (dispatch) {
@@ -61,4 +61,4 @@ function mapDispatchToProps (dispatch) {
     actions: bindActionCreators(actions, dispatch)
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Stink)
+export default connect(mapStateToProps, mapDispatchToProps)(Smell)

@@ -7,7 +7,7 @@ import ContextProvider from '../ContextProvider'
 import Home from './features/OtherPages/home'
 import About from './features/OtherPages/about'
 import Help from './features/OtherPages/help'
-import Talk from './features/see-and-stink/'
+import See from './features/see-and-smell'
 import Language from './features/OtherPages/language'
 import Footer from './features/BottomSide/Footer'
 import Nav from './features/TopSide/NavBar'
@@ -30,7 +30,7 @@ const Root = ({ store, Router, location, context }) => (
               <Route exact path='/' component={Home} />
               <Route exact path='/language' component={Language} />
               <Route exact path='/help' component={Help} />
-              <Route exact path='/see-and-stink' component={Talk} />
+              <Route exact path='/see-and-smell' component={See} />
               <Route exact path='/about' component={About} />
               <Route component={NotFound} />
             </Switch>

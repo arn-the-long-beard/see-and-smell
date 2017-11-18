@@ -1,4 +1,4 @@
-# see-and-stink
+# see-and-smell
 Carbone footprint simulator/calculator I made last year with google map
 # README #
 [![Front‑End_Checklist followed](https://img.shields.io/badge/Front‑End_Checklist-followed-brightgreen.svg)](https://github.com/thedaviddias/Front-End-Checklist/)
@@ -30,11 +30,11 @@ Experimental: Expect the unexpected. Please provide feedback on api and your use
 
 Download
 
-    git clone git clone https://github.com/arn-the-long-beard/talk-and-stink.git
+    git clone git clone https://github.com/arn-the-long-beard/talk-and-smell.git
 
 Go to the directory
    
-    cd see-and-stink
+    cd see-and-smell
     
 Install Npm Packages
     

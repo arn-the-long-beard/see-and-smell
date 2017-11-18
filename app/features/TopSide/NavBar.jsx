@@ -26,10 +26,10 @@ class NavBar extends Component {
             fontWeight: 'bold',
             color: '#015367'
           }}>Help</NavLink>
-          <NavLink className={styles.itemlink} to='/see-and-stink' activeStyle={{
+          <NavLink className={styles.itemlink} to='/see-and-smell' activeStyle={{
             fontWeight: 'bold',
             color: '#015367'
-          }}>Talk and seek</NavLink>
+          }}>See and Smell</NavLink>
         </div></div></nav>
     )
   }

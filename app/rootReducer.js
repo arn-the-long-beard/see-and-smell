@@ -1,11 +1,11 @@
 import {combineReducers} from 'redux'
 
-import seeAndStink from './features/see-and-stink/reducer'
+import seeAndStink from './features/see-and-smell/reducer'
 import host from './features/Server/reducer'
 const rootReducer = combineReducers({
   // short hand property names
 //  utilData
-  seeAndStink,
+  seeAndSmell: seeAndStink,
   host
 })
 export default rootReducer
