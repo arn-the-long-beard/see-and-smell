@@ -1,0 +1,39 @@
+content {
+  height:80vh;
+  width: 100%; /* is required for isomorphism */
+
+
+}
+
+.container {
+  background: white;
+  width: 25vh;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  z-index: 70;
+  content: "";
+  height: fit-content;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.titleSection {
+  display: inline-block;
+  color: #1c433d;
+}
+.result {
+  display: block;
+  margin-bottom: 10px;
+  color: #1c433d;
+}
+.label {
+  display: inline-block;
+  color: #1c433d;
+}
+.errors {
+  color: darkred;
+  font-weight: bold;
+}
