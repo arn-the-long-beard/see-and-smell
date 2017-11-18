@@ -92,38 +92,38 @@ export function validateData (result) {
  *
  */
 
-export const checkCompatibilityFailed = (json) => {
+export const checkGoogleMapApiReadyFailed = (json) => {
   return {
-    type: types.CHECK_COMPATIBILITY_FAILED,
+    type: types.CHECK_GOOGLE_MAP_API_READY_FAILED,
     err: json.err,
     message: json.message
   }
 }
-export const checkCompatibilityRequest = () => {
+export const checkGoogleMapApiReadyRequest = () => {
   return {
-    type: types.CHECK_COMPATIBILITY_REQUEST
+    type: types.CHECK_GOOGLE_MAP_API_READY_REQUEST
 
   }
 }
-export const checkCompatibilitySuccess = (json) => {
+export const checkGoogleMapApiReadySuccess = (json) => {
   return {
-    type: types.CHECK_COMPATIBILITY_SUCCESS,
-    compatibility: json.success
+    type: types.CHECK_GOOGLE_MAP_API_READY_SUCCESS,
+    loaded: true
   }
 }
 
-export function checkCompatibility () {
+export function checkGoogleMapApiReady () {
   return function (dispatch, getState) {
     // We could imagine some validation and detection api here
-    dispatch(checkCompatibilityRequest())
-    return Api.checkWebBrowser().then(response => {
+    dispatch(checkGoogleMapApiReadyRequest())
+    return Api.checkGoogleMapReady().then(response => {
       if (response.success) {
-        dispatch(checkCompatibilitySuccess(response))
+        dispatch(checkGoogleMapApiReadySuccess(response))
       } else {
-        dispatch(checkCompatibilityFailed(response))
+        dispatch(checkGoogleMapApiReadyFailed(response))
       }
     }).catch(error => {
-      dispatch(checkCompatibilityFailed(error))
+      dispatch(checkGoogleMapApiReadyFailed(error))
     })
   }
 }

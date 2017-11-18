@@ -1,70 +1,27 @@
 import * as types from './actionTypes'
 
 export default function see (state = { errors: null,
-  record: false,
-  hasStopped: false,
-  isRecording: false,
-  isReady: false,
-  isCompatible: false}, action) {
+  isReady: false}, action) {
   switch (action.type) {
-    // case types.RENDER_MICROPHONE:
-    //   return {...state,
-    //     isReady: true
-    //   }
-    case types.START:
+    case types.CHECK_GOOGLE_MAP_API_READY_FAILED:
       return {...state,
-        record: true,
-        isRecording: true
-      }
-    case types.STOP:
-      return {...state,
-        record: false,
-        isRecording: false
-      }
-    case types.HAS_STOPPED:
-      return {...state,
-        record: false,
-        hasStopped: true,
-        isRecording: false,
-        data: action.data
-      }
-
-    case types.VALIDATE_DATA_SUCCESS:
-      return {...state,
-        data: action.data,
-        isValidating: false,
-        isValide: true
-      }
-    case types.VALIDATE_DATA_REQUEST:
-      return {...state,
-        isValidating: true
-      }
-    case types.VALIDATE_DATA_FAILED:
-      return {...state,
-        isValidating: false,
-        isValide: false,
-        errors: action.err
-      }
-    case types.CHECK_COMPATIBILITY_FAILED:
-      return {...state,
-        isCompatible: false,
+        isReady: false,
         message: action.message,
-        errors: action.err
+        errors: action.err,
+        isRequesting: false
       }
-    case types.CHECK_COMPATIBILITY_SUCCESS:
+    case types.CHECK_GOOGLE_MAP_API_READY_SUCCESS:
       return {...state,
         isRequesting: false,
         message: null,
         errors: null,
-        isCompatible: action.compatibility
+        isReady: action.loaded
       }
-
-    case types.CHECK_COMPATIBILITY_REQUEST:
+    case types.CHECK_GOOGLE_MAP_API_READY_REQUEST:
       return {...state,
         isRequesting: true,
-        isCompatible: false
+        isReady: false
       }
-
     default:
       return state
   }

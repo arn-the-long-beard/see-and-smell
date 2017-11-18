@@ -23,6 +23,7 @@ const Root = ({ store, Router, location, context }) => (
             <meta name='viewport' content='width=device-width, initial-scale=1' />
             <html lang='en' />
             <html dir='ltr' />
+            <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBnk7smY3mIjOQ3KQF1Ntb7hWrgwqoZ0Hw'  />
           </Helmet>
           <Nav />
           <main role='main'>

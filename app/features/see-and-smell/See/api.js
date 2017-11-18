@@ -15,24 +15,26 @@ class Api {
     })
   }
 
-  static checkWebBrowser () {
+  static checkGoogleMapReady () {
     return new Promise((resolve, reject) => {
-      try {
-        const SpeechRecognition = window.SpeechRecognition ||
-          window.webkitSpeechRecognition ||
-          window.mozSpeechRecognition ||
-          window.msSpeechRecognition ||
-          window.oSpeechRecognition
+      var goRoot = document.createElement('div')
+      goRoot.id = 'google-root'
 
-        if (SpeechRecognition != null) {
-          return resolve({success: true, message: 'You are using the correct web browser'})
-        } else {
-          console.warn('The current browser does not support the SpeechRecognition API.')
-          return resolve({success: false, err: 'Please use Chrome as web browser ', message: 'Please use Chrome as web browser'})
+      document.head.appendChild(goRoot);
+
+      (function (d, s, id) {
+        const element = d.getElementsByTagName(s)[0]
+        const ljs = element
+        var js = element
+        if (d.getElementById(id)) {
+          return
         }
-      } catch (e) {
-        return reject(new Error(e))
-      }
+        js = d.createElement(s)
+        js.id = id
+        js.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBnk7smY3mIjOQ3KQF1Ntb7hWrgwqoZ0Hw'
+        ljs.parentNode.insertBefore(js, ljs)
+      }(document, 'script', 'google'))
+      resolve({success: true})
     })
   }
 }

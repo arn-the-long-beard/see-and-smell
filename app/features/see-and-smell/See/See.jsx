@@ -30,19 +30,17 @@ class See extends Component {
   }
 
   componentDidMount () {
-    this.props.actions.checkCompatibility()
+    this.props.actions.checkGoogleMapApiReady()
   }
 
   render () {
     return (
       <SeeFrame
-        record={this.props.see.record}
         start={this.start}
         onEnd={this.onEnd}
         errors={this.props.see.errors}
         onResult={this.onResult}
-        result={this.props.see.data}
-        compatibility={this.props.see.isCompatible}
+        ready={this.props.see.isReady}
           />
     )
   }
