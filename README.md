@@ -5,7 +5,7 @@ Carbone footprint simulator/calculator I made last year with google map
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build Status](https://travis-ci.org/arn-the-long-beard/see-and-stink.svg?branch=master)](https://travis-ci.org/arn-the-long-beard/see-and-stink)
-![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)
+[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/dominictarr/stability)
 
 
 
