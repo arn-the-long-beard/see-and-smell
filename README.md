@@ -8,20 +8,14 @@ Carbone footprint simulator/calculator I made last year with google map
 [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/dominictarr/stability)
 
 
-
-Speak to the App and find information  :microphone: [Here](https://mys terious-atoll-69963.herokuapp.com/talk)
-
  
-The web browser may tell you that the page tries to load unsafe script (the http Wikipedia Request) 
- 
-
 ## Stability
 
 Experimental: Expect the unexpected. Please provide feedback on api and your use-case.
 
 ### Intropduction ###
 
-
+The app is not ready yet
 
 * Version
 1.0.0
@@ -46,15 +40,7 @@ Start the server
     
 * Comments  
 
-It is working on http because of the wikiJs. 
 
-Usually I run everything on https by using http2/spdy.
-
-You can change development.js and the page.js inside wikisj to have full https
-
-The redux store has information about the server in case of test on local network 
-
-There is also a promisesCollecteur to handle Async redux actions for injecting data and render ready html for SEO if we need
 
 
 * Configuration
